@@ -1,0 +1,814 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.logo {
+  background-color: #f0f8ff;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.8rem;
+  color: #004d80;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+.main-header {
+  background-color: #004d80;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Add this for mobile wrapping */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 1rem; /* Add some margin to the logo */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; /* Add this for mobile wrapping */
+  justify-content: center; /* Center nav links on mobile */
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+  padding: 0.5rem; /* Add padding to links */
+  border-radius: 5px; /* Add border radius for better touch on mobile */
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 70vh; /* Reduced height for smaller screens */
+  background: url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0; /* Remove padding to ensure full width on mobile */
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem; /* Smaller heading on mobile */
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero-text p {
+  font-size: 1.1rem; /* Smaller paragraph on mobile */
+  color: #f0f0f0;
+}
+
+/* Intro Section */
+.intro {
+  padding: 2rem 1rem; /* Adjusted padding for mobile */
+  background-color: white;
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 2rem; /* Smaller heading on mobile */
+  color: #004d80;
+  margin-bottom: 1.5rem; /* Reduced margin */
+}
+
+.intro-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem; /* Reduced gap on mobile */
+}
+
+.intro-item {
+  width: 100%; /* Full width on mobile */
+  max-width: 350px; /* Added max width */
+  background: #f2f2f2;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center items */
+}
+
+.intro-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.intro-item h3 {
+  color: #004d80;
+  margin-top: 1rem;
+  font-size: 1.2rem; /* Smaller heading on mobile */
+}
+
+.intro-item p {
+  padding: 0 1rem 1rem;
+  font-size: 0.95rem; /* Smaller paragraph on mobile */
+}
+
+/* Footer */
+.footer {
+  background-color: #004d80;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem; /* Smaller font on mobile */
+}
+
+/* Attractions Page */
+.attractions {
+  padding: 1.5rem 1rem; /* Reduced padding for mobile */
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.attractions h1 {
+  text-align: center;
+  color: #004d80;
+  margin-bottom: 1.5rem; /* Reduced margin */
+  font-size: 2rem; /* Smaller heading on mobile */
+}
+
+.attraction-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Reduced gap on mobile */
+  justify-content: center;
+}
+
+.attraction-card {
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%; /* Full width on mobile */
+  max-width: 350px; /* Added max width */
+  text-align: center;
+  margin: 0 auto;
+}
+
+.attraction-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.attraction-card h3 {
+  color: #004d80;
+  margin: 1rem 0 0.5rem;
+  font-size: 1.2rem; /* Smaller heading on mobile */
+}
+
+.attraction-card p {
+  padding: 0 1rem 1.5rem;
+  font-size: 0.95rem; /* Smaller paragraph on mobile */
+}
+
+/* Accommodation Page */
+.accommodation {
+  padding: 1.5rem 1rem; /* Reduced padding for mobile */
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.accommodation h1 {
+  text-align: center;
+  color: #004d80;
+  margin-bottom: 1.5rem; /* Reduced margin */
+  font-size: 2rem; /* Smaller heading on mobile */
+}
+
+.accommodation-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Reduced gap on mobile */
+  justify-content: center;
+}
+
+/* Each hotel card */
+.accommodation-card {
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%; /* Full width on mobile */
+  max-width: 350px; /* Added max width */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.accommodation-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.accommodation-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.accommodation-card:hover img {
+  filter: brightness(0.95);
+}
+
+.accommodation-card h3 {
+  color: #004d80;
+  margin: 1rem 0 0.5rem;
+  font-size: 1.2rem; /* Smaller heading on mobile */
+}
+
+.accommodation-card p {
+  padding: 0 1rem 1.5rem;
+  font-size: 0.95rem; /* Smaller paragraph on mobile */
+  color: #333;
+}
+
+/* --- Travel Tips Page Styles --- */
+
+.travel-tips {
+  padding: 1.5rem 1rem; /* Reduced padding for mobile */
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.travel-tips h1 {
+  text-align: center;
+  color: #004d80;
+  margin-bottom: 1.5rem; /* Reduced margin */
+  font-size: 2rem; /* Smaller heading on mobile */
+}
+
+.tip-section {
+  margin-bottom: 1.5rem; /* Reduced margin */
+  background-color: #e6f0ff;
+  padding: 1rem; /* Reduced padding for mobile */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eee;
+}
+
+.tip-section h2 {
+  color: #004d80;
+  margin-bottom: 1rem;
+  font-size: 1.3rem; /* Smaller heading on mobile */
+}
+
+.tip-section p {
+  line-height: 1.7;
+  color: #444;
+  font-size: 0.95rem; /* Smaller paragraph on mobile */
+}
+
+.tip-section ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.tip-section li {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 0.95rem; /* Smaller list item font */
+}
+
+.tip-section h4 {
+  color: #004d80;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.tip-section ul li {
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-size: 0.95rem; /* Smaller list item font */
+}
+
+/* Style for strong elements */
+.tip-section strong {
+  color: #00669f;
+  font-weight: bold;
+}
+
+/* --- Contact Us Page Styles (Blue Theme - Compact) --- */
+
+.contact-us {
+  padding: 1.5rem;
+  max-width: 100%; /* Make it full width on mobile */
+  margin: 0 auto;
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.contact-us h1 {
+  text-align: center;
+  color: #004d80;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.contact-us p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #555;
+  font-size: 0.95rem; /* Smaller paragraph on mobile */
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #004d80;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.65rem;
+  border: 1px solid #b3cce6;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-family: 'Segoe UI', sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #00669f;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 102, 159, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%2300669f' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.65rem center;
+  background-size: 0.8em;
+}
+
+.contact-us button[type="submit"] {
+  background-color: #00669f;
+  color: white;
+  padding: 0.65rem 1.25rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%; /* Make button full width on mobile */
+  margin-top: 0.5rem;
+}
+
+.contact-us button[type="submit"]:hover {
+  background-color: #005580;
+  transform: scale(1.01);
+}
+
+.contact-info {
+  margin-top: 2rem;
+  text-align: center;
+  color: #777;
+}
+
+.contact-info h2 {
+  color: #00669f;
+  font-size: 1.3rem;
+  margin-bottom: 0.85rem;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 0.45rem;
+  font-size: 0.95rem; /* Smaller font on mobile */
+}
+
+.contact-info a {
+  color: #005580;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+  color: #004477;
+}
+
+/* References Page Specific Styles */
+.references {
+  padding: 1.5rem 1rem; /* Reduced padding for mobile */
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.references h1 {
+  text-align: center;
+  color: #004d80;
+  margin-bottom: 1.5rem; /* Reduced margin */
+  font-size: 2rem; /* Smaller heading on mobile */
+}
+
+.references h2 {
+  color: #004d80;
+  margin-bottom: 1rem;
+  font-size: 1.3rem; /* Smaller heading on mobile */
+}
+
+.reference-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.reference-list li {
+  margin-bottom: 1rem;
+  padding-left: 0;
+  font-size: 0.95rem; /* Smaller font on mobile */
+}
+
+.reference-list p {
+  line-height: 1.7;
+  color: #333;
+}
+
+.reference-list a {
+  color: #00669f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.reference-list a:hover {
+  text-decoration: underline;
+  color: #004d80;
+}
+
+.homepage-references {
+  margin-bottom: 1.5rem; /* Reduced margin */
+}
+
+.content-references {
+  margin-top: 2rem;
+  background-color: #f2f2f2;
+  padding: 1rem; /* Reduced padding for mobile */
+  border-radius: 10px;
+  font-size: 0.95rem; /* Smaller font on mobile */
+}
+
+
+/* Media Queries for Responsiveness */
+
+/* For tablets (768px and up) */
+@media (min-width: 768px) {
+  .main-header {
+    padding: 1rem 2rem;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+  }
+
+  .hero {
+    height: 80vh;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+
+  .intro {
+    padding: 3rem 2rem;
+  }
+
+  .intro h2 {
+    font-size: 2.2rem;
+  }
+
+  .intro-item {
+    width: 320px;
+  }
+
+  .attractions {
+    padding: 2rem;
+  }
+
+  .attractions h1 {
+    font-size: 2.2rem;
+  }
+
+  .attraction-grid {
+    gap: 2rem;
+  }
+
+  .attraction-card {
+    width: 320px;
+  }
+
+  .accommodation {
+    padding: 2rem;
+  }
+
+  .accommodation h1 {
+    font-size: 2.2rem;
+  }
+
+  .accommodation-grid {
+    gap: 2rem;
+  }
+
+  .accommodation-card {
+    width: 320px;
+  }
+
+  .travel-tips {
+    padding: 2rem;
+  }
+
+  .travel-tips h1 {
+    font-size: 2.2rem;
+  }
+
+  .tip-section {
+    padding: 1.5rem;
+  }
+
+  .tip-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .tip-section p {
+    font-size: 1rem;
+  }
+
+  .tip-section li {
+    font-size: 1rem;
+  }
+
+  .contact-us {
+    padding: 2rem;
+    max-width: 700px;
+  }
+
+  .contact-us h1 {
+    font-size: 2rem;
+  }
+
+  .contact-us p {
+    font-size: 1rem;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 1rem;
+  }
+
+  .contact-us button[type="submit"] {
+    font-size: 1.1rem;
+    width: auto;
+    margin-top: 0;
+  }
+
+  .contact-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact-info li {
+    font-size: 1rem;
+  }
+
+  .references {
+    padding: 2rem;
+  }
+
+  .references h1 {
+    font-size: 2.2rem;
+  }
+
+  .references h2 {
+    font-size: 1.5rem;
+  }
+
+  .reference-list li {
+    font-size: 1rem;
+  }
+
+  .content-references {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* For desktops (1200px and up) */
+@media (min-width: 1200px) {
+  .main-header {
+    padding: 1rem 3rem;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    gap: 2rem;
+  }
+
+  .hero {
+    height: 90vh;
+  }
+
+  .hero-text h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.3rem;
+  }
+
+  .intro {
+    padding: 3rem 2rem;
+  }
+
+  .intro h2 {
+    font-size: 2.2rem;
+  }
+
+  .intro-item {
+    width: 300px;
+  }
+
+  .attractions {
+    padding: 2rem;
+  }
+
+  .attractions h1 {
+    font-size: 2.2rem;
+  }
+
+  .attraction-grid {
+    gap: 2rem;
+  }
+
+  .attraction-card {
+    width: 320px;
+  }
+
+  .accommodation {
+    padding: 2rem;
+  }
+
+  .accommodation h1 {
+    font-size: 2.2rem;
+  }
+
+  .accommodation-grid {
+    gap: 2rem;
+  }
+
+  .accommodation-card {
+    width: 320px;
+  }
+
+  .travel-tips {
+    padding: 2rem;
+  }
+
+  .travel-tips h1 {
+    font-size: 2.2rem;
+  }
+
+  .tip-section {
+    padding: 1.5rem;
+  }
+
+  .tip-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .tip-section p {
+    font-size: 1rem;
+  }
+
+  .tip-section li {
+    font-size: 1rem;
+  }
+
+  .contact-us {
+    padding: 2rem;
+    max-width: 700px;
+  }
+
+  .contact-us h1 {
+    font-size: 2rem;
+  }
+
+  .contact-us p {
+    font-size: 1rem;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 1rem;
+  }
+
+  .contact-us button[type="submit"] {
+    font-size: 1.1rem;
+    width: auto;
+    margin-top: 0;
+  }
+
+  .contact-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact-info li {
+    font-size: 1rem;
+  }
+
+  .references {
+    padding: 2rem;
+  }
+
+  .references h1 {
+    font-size: 2.2rem;
+  }
+
+  .references h2 {
+    font-size: 1.5rem;
+  }
+
+  .reference-list li {
+    font-size: 1rem;
+  }
+
+  .content-references {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+}
